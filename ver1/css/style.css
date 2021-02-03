@@ -1,0 +1,408 @@
+/*GLOBAL STYLES*/
+
+/*-- Body reset--*/
+body{
+    overflow-x: hidden;
+    font-family: /*'Montserrat', sans-serif; */  Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    color: #616971;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}  
+ 
+/*== top bar==*/
+
+/*===== #7aaec4; ===*/
+    .top-bar{
+        background-color: #fffa98;      
+        height: 1.8rem;
+        padding: .5rem 0;
+        margin-right: 0;
+    }
+    .top-bar a{
+        color: #1b2725;
+        text-decoration: none;
+        font-size: 1.1rem;
+        padding: 0px 6px;
+    }
+    .search{
+        float: left;
+    }
+    /*social nav bar*/
+    .smd{
+        float:right;
+        padding: 0 .2rem;
+        font-size: 1.5rem;
+        color: #4981b3;
+    }
+    .smd:hover{
+        color: #1b2725;
+    }
+ .clr{
+     clear: both;
+ }
+/*===secondary menu =====*/
+.secondm{
+    margin-left: 48px;
+}
+.secondm a{
+    color: #69a0d6;
+}
+.secondm a:hover{
+    color:#222222;
+    padding: .2rem;
+}
+/*==== Navigation====*/
+    /*logo*/
+    .navbar-brand img{
+     padding:0;
+     width: 122px;
+     height: 112px;
+     position: fixed;
+     z-index:500;
+     margin: -76px -83px;
+    }
+    .navbar{
+        font-size: 1.1rem;
+        font-weight: 500;
+        letter-spacing: 0.5px;
+        box-shadow: 0 .5rem .5rem rgba(0, 0, 0, 0.4);
+        padding: 0;
+        background-color:  #fffa98 !important;
+        /*background-image: linear-gradient(to left,#fffa98, #ffffff);*/
+        z-index: 5;
+    }
+    .navbar ul{
+        margin: 14px 7px 17px 21px;
+    }
+   
+    .navbar-nav{
+       
+        margin:  0 -32px 0px 0px;
+        padding: 0;
+    }
+    .nav-item{
+        padding: 0 5px;
+        text-transform: uppercase;
+    }
+    .nav-link{
+        color:#4981b3 !important;    
+    }
+    .nav-link:hover{
+        color:#e0e1e4 !important;
+        background-color:#860c0c;
+    }
+    /* class to apply on sticky nav when scrolled with JS */
+.fixed{
+    position: fixed;
+    width: 100%;
+    top: 0;
+    transition: background-color 1.5s cubic-bezier(0.65, 0.05, 0.36, 1);
+  }
+/*=====Carousel====*/
+#myCarousel{
+    margin-top: .5rem;
+    box-shadow: 0 1rem 1rem rgba(0, 0, 0, 0.1);   
+}
+.carousel-inner img {
+    -webkit-filter: grayscale(90%);
+    filter: grayscale(90%); /* make all photos black and white */ 
+    width: 100%; /* Set width to 100% */
+    margin: auto;
+  }
+.carousel-inner{
+    max-height: 38rem !important;
+}
+/*====change carousel changing speed====*/
+.carousel-item-prev,
+.carousel-item-next,
+.carousel-item .active{
+    transition: transform 1.2s ease none;
+}
+
+/*=====carousel content=====*/
+.carousel-caption{
+    position: absolute;
+    top: 54%;
+    transform: translateY(-50%);
+    text-transform: uppercase;
+}
+.bg-custom{
+    background-color: rgba(0, 0, 0, 0.4);
+    color: white;
+    border-radius: 1rem;
+}
+.carousel-caption h1{
+    font-size: 2.4rem;
+    text-shadow: .1rem .1rem .3rem rgba(0, 0, 0, 2);
+}
+.border-primary {
+    border-top: .2rem solid #fffa98 !important;
+}
+.carousel-caption h3{
+    font-size: 1.8rem;
+    text-shadow: .1rem .1rem .1rem rgba(0, 0, 0, 2);
+}
+.btn-lg{
+    border-radius: 0;
+    text-transform: uppercase;
+    font-size: 1rem;
+    
+}
+.btn-danger{
+    color: #4981b3;
+    background-color: #fffa98;
+    border: .05rem solid #fffa98 !important;
+}
+.btn-danger:hover,
+.btn-danger:focus{
+    color: #4981b3;
+    background-color: #f1ec5a !important;
+    border: .05rem solid #fffa98 !important;
+}
+.btn-primary{
+    color:  #fffa98;
+    background-color:#4981b3;
+    border: .05rem solid #4981b3 !important;
+}
+
+/*president message section*/
+.pmsg{
+  
+    background: #fffa98;
+    background: linear-gradient(
+      rgba(243, 240, 39, 0.6),
+      rgba(235, 245, 97, 0.7)
+    ),
+    url();
+    width: 100%;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  .pmsg h2{
+    font-size: 2em;
+    color: rgb(14, 2, 2);
+    text-align: center;
+    padding: 0;
+  }
+  .pmsg p { 
+    color: #000;
+    text-align: justify;
+    font-size:1.1em;
+    padding: 1em;
+  }
+  pmsg img{
+      margin-top: 1rem;
+  }
+  /*==About us==*/
+  .abt{
+    background: #fff;
+    box-shadow: 0 0 20px -6px rgba(0,0,0,0.2);
+  }
+  .abt h4{
+    text-align: center;  
+  }
+  
+  .abt img{
+    width: 150px;
+    height: 150px;
+    margin-left: 90px !important;
+  }
+  /*==NEWS Section===*/
+  .news{
+      margin: 0;
+  }
+  .news img{
+      width: 200px;
+      height: 200px;
+
+  }
+/*===fixed background image====*/
+.fixed{
+    background-image: url('../img/catles.jpg');
+    position: fixed;
+}
+.fixed-background{
+    padding: 10rem 0;
+    
+}
+.fixed-background .text-center{
+    background-color: rgba(0, 0, 0, 0.2);
+}
+/*==journals section ==*/
+
+/*==Trainig section==*/
+.trn{
+    background-color: rgba(0, 0, 0, 0.4);
+}
+.trn img{
+    width: 200px;
+    height: 200px;
+}
+.trn h4{
+    text-align: center;  
+  }
+  .trn p{
+      margin: 0 2px;
+      
+  }
+
+/*==projects section==*/
+.prj{
+    background-color: rgba(0, 0, 0, 0.4);
+}
+.prj img{
+    width: 200px;
+    height: 200px;
+}
+.prj h4{
+    text-align: center;  
+  }
+.prj p{
+      margin: 0 2px;
+      
+  }
+
+/*=====partners slide===*/
+
+/*====footer====*/
+
+footer{
+    background-color: #383838;
+    padding: 1rem 2rem 3rem;
+}
+footer p,footer a,.socket a{
+    color: white;
+    text-decoration: none;
+}
+ul.social{
+    list-style-type: none;
+    display: flex;
+    max-width: 16rem;
+    margin: 0 auto;
+    padding: 0;
+}
+ul.social li{
+    margin: 0 auto;
+}
+footer .svg-inline--fa{
+    font-size: 2.1rem;
+    padding: 0 .2rem;
+}
+footer .svg-inline--fa:hover{
+    color: #69a0d6;
+}
+
+/*====socket*=====*/
+.socket{
+    background-color: #222222;
+    border-top: .1rem solid #fffa98;
+}
+
+
+/*=== Media Queries===*/
+/* Devices under 1199px(xl) */
+@media(max-width:1199.98px){
+
+}
+/* Devices under 768px(md) */
+@media(max-width:768.98px){
+    
+}
+
+/* ==Bootstrap break points :
+Extra small(xs) devices(portrait phones,less than 576px)
+No medeia query since this is the default in bootstrap
+
+small(sm) devices(landscape phones, 576px and up)
+@media(min-width:576px){... }
+
+medium(md) devices(tablets, 768px and up)
+@media(min-width:768px){... }
+
+large(lg) devices(desktops, 992px and up)
+@media(min-width:992px){... }
+
+extra large(xl) devices(large desktops, 1200px and up)
+@media(min-width:1200px){... }
+
+=====*/
+
+/*==bootstrap mobile gutter fix===*/
+.row,.container-fluid{
+    margin-left: 0px !important;
+    margin-right: 0px !important;
+}
+/*====fixed background image====*/
+.fixed-background{
+position: relative;
+width: 100%;
+z-index: 1 !important;
+}
+.fixed-wrap{
+    clip: rect(0,auto,auto,0);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -999 !important;
+}
+.fixed{
+    z-index: -999 !important;
+    display: block;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-size:cover;
+    background-position: center center;
+    -webkit-transform: translateZ(0);
+    transform: translateZ(0);
+    will-change: transform;
+
+}
+
+
+
+
+
+
+/* this is test code*/
+/* this element added by JS to act as the observer*/
+.myObserver {
+    height: 1px;
+    width: 1px;
+    pointer-events: none;
+    position: relative;
+    top:auto;
+    z-index: -1;
+    overflow: hidden;
+  }
+  .header {
+    background: #06c;
+    display: flex;
+    padding: 20px;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    text-align: center;
+    font-size: 25px;
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+    font-weight: bold;
+    transition: all 0.5s ease-out;
+  }
+  /* seems to be buggy when you change height of the header as there seems to be rounding error causing a jumping effect on the header*/
+  .sticky-element {
+    background: #f00;
+    font-size: smaller;
+    padding: 10px;
+  }  
+  
+  /* end of test code*/
+  
+  

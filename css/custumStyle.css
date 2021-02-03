@@ -1,0 +1,398 @@
+/*-- Body reset--*/
+body{
+  overflow-x: hidden;
+  font-family: /*'Montserrat', sans-serif; */ poppins, Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  color: #616971;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}  
+/*== Header==*/
+  #header {
+    font-family: Montserrat;
+  /* background-color: #fffa98;   */
+  }
+
+  /*==Top bar==*/
+   /*==Search icon*/
+   .search{
+    float: left;
+  }
+    /*==social media links==*/
+      .social{    
+        height: 1.8rem;
+        padding: .5rem 0;
+        margin: 0 41px;
+        border-bottom: 4px solid #ffffff;
+      }
+      .social a{
+          color: #1b2725;
+          text-decoration: none;
+          font-size: 1.1rem;
+          padding: 0px 6px;
+      }
+      .smd{
+        float:right;
+        padding: 0 .2rem;
+        font-size: 1.5rem;
+        color: #4981b3;
+      
+      }
+      .smd:hover{
+        color: #1b2725;
+      }
+      /*===clearing styles===*/
+      .clr{
+        clear: both;
+    }
+    /*===secondary menu =====*/
+        .secm{
+          margin: -20px 204px;
+        }
+        .secondm{
+          float: right;  
+          margin: 0 506px;/* center alignment*/
+        }
+        .secondm a{
+          color: #69a0d6;
+          text-decoration: none;
+        }
+        .secondm a:hover{
+          color:#222222;
+          padding: .2rem;
+        }
+/*==== Main Navigation====*/
+        #nav {
+          background-color:  #fffa98 !important;   
+          top: 0;
+          width: 100%;
+              box-shadow: 0 .5rem .5rem rgba(0, 0, 0, 0.4);
+              /*background-image: linear-gradient(to left,#fffa98, #ffffff);*/
+        }
+        #nav ul {
+          margin: 0;
+          padding: 0;
+          list-style: none;
+          display: flex;
+        }
+        /*logo*/
+        #nav ul li img {
+          height: 150px;
+          transition: height 0.4s;
+        }
+        #nav li {
+          flex: 1;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          transition-duration: 0.5s;
+        }
+        #nav li
+        #nav ul li a {
+          color:#4981b3 !important;  
+          text-decoration: none;
+          text-transform: uppercase;
+          font-size: 1.2rem;
+          font-weight: 500;
+          letter-spacing: 1px;
+          transition: all 0.4s;   
+        }
+        #nav ul li a:hover {
+          color:#080808!important;  
+          
+        }
+        /*===Dropdown effect===*/
+    
+        
+        /*===Dropdown effect===*/
+        /*Finally the CSS for when the navbar has the fixed class activated:*/
+        #nav.fixed {
+          position: fixed;
+          box-shadow: 5px 5px 19px 0px rgba(0, 0, 0, 0.5);
+          z-index: 2000;
+        }
+        #nav.fixed ul li img {
+          height: 36px;
+        }
+        #nav.fixed ul li a {
+          font-size: 14px;
+        }
+
+
+/*===MAIN CONTENT STYLING===*/
+    /*=====Carousel====*/
+      #myCarousel{
+        margin-top: .5rem;
+        box-shadow: 0 1rem 1rem rgba(0, 0, 0, 0.1);   
+      }
+      .carousel-inner{
+        max-height: 38rem !important;
+      }
+      /*====change carousel changing speed====*/
+      .carousel-item-prev,
+      .carousel-item-next,
+      .carousel-item .active{
+          transition: transform 1.2s ease none;
+      }
+/*=====carousel content=====*/
+      .carousel-caption{
+          position: absolute;
+          top: 50%;
+          transform: translateY(-50%);
+          text-transform: uppercase;
+      }
+      .bg-custom{
+          background-color: rgba(0, 0, 0, 0.4);
+          color: white;
+          border-radius: 1rem;
+      }
+      .carousel-caption h1{
+          font-size: 2.4rem;
+          text-shadow: .1rem .1rem .3rem rgba(0, 0, 0, 2);
+      }
+      .border-primary {
+          border-top: .2rem solid #fffa98 !important;
+      }
+      .carousel-caption h3{
+          font-size: 1.8rem;
+          text-shadow: .1rem .1rem .1rem rgba(0, 0, 0, 2);
+      }
+      .btn-lg{
+          border-radius: 0;
+          text-transform: uppercase;
+          font-size: 1rem;   
+      }
+      .btn-danger{
+          color: #4981b3 !important;
+          background-color: #fffa98 !important;
+          border: .05rem solid #fffa98 !important;
+      }
+      .btn-danger:hover,
+      .btn-danger:focus{
+          color: #4981b3;
+          background-color: #f1ec5a !important;
+          border: .05rem solid #fffa98 !important;
+      }
+      .btn-primary{
+          color:  #fffa98;
+          background-color:#4981b3 !important;
+          border: .05rem solid #4981b3 !important;
+      }
+      /*president message section*/
+        .pmsg{
+          
+          background: #fffa98;
+          background: linear-gradient(
+            rgba(243, 240, 39, 0.6),
+            rgba(235, 245, 97, 0.5)
+          ),
+          url();
+          width: 100%;
+          background-attachment: fixed;
+          background-position: center;
+          background-repeat: no-repeat;
+          background-size: cover;
+        }
+        .pmsg h2{
+          font-size: 2em;
+          color: rgb(14, 2, 2);
+          text-align: center;
+          padding: 0;
+          margin-top: -131px;
+        }
+        .pmsg p { 
+          color: #000;
+          text-align: justify;
+          font-size:1.3em;
+          padding: 1em;
+        }
+        .pmsg img{
+            margin-top: 1rem;
+            height: 400px;
+        }
+        .position{
+          margin: 0 46px;
+        }
+
+        /*==About us==*/
+        .abt{
+          background: #fff;
+          box-shadow: 0 0 20px -6px rgba(0,0,0,0.2);
+          margin-right: 20px;
+        }
+        .abt h4{
+          text-align: center;  
+        }
+        
+        .abt img{
+          width: 150px;
+          height: 150px;
+          margin-left: 90px !important;
+        }
+ 
+         /*==NEWS Section===*/
+        .news{
+          margin: 0;
+      }
+      .news img{
+          width: 200px;
+          height: 200px;
+
+      }
+      .jrnl{
+        margin-top: -130px;
+      }
+      
+/*===fixed background image====*/
+.fixedbg{
+  background-image: url('../img/catles.jpg');
+  position: fixed;
+}
+
+.fixed-background{
+  padding: 10rem 0;
+  
+}
+.fixed-background .text-center{
+  background-color: rgba(0, 0, 0, 0.2);
+}
+/*==journals section ==*/
+
+/*==Trainig section==*/
+.trn{
+  background-color: rgba(0, 0, 0, 0.4);
+}
+.trn img{
+  width: 200px;
+  height: 200px;
+}
+.trn h4{
+  text-align: center;  
+}
+.trn p{
+    margin: 0 2px;
+    
+}
+
+/*==projects section==*/
+.prj{
+  background-color: rgba(0, 0, 0, 0.4);
+}
+.prj img{
+  width: 200px;
+  height: 200px;
+}
+.prj h4{
+  text-align: center;  
+}
+.prj p{
+    margin: 0 2px;
+    
+}
+
+/*=====partners slide===*/
+
+/*====footer====*/
+
+footer{
+  background-color: #383838;
+  padding: 1rem 2rem 3rem;
+}
+footer p,footer a,.socket a{
+  color: white;
+  text-decoration: none;
+}
+ul.social1{
+  list-style-type: none;
+  display: flex;
+  max-width: 16rem;
+  margin: 0 auto;
+  padding: 0;
+}
+ul.social1 li{
+  margin: 0 auto;
+}
+footer .svg-inline--fa{
+  font-size: 2.1rem;
+  padding: 0 .2rem;
+}
+footer .svg-inline--fa:hover{
+  color: #69a0d6;
+}
+
+/*====socket*=====*/
+.socket{
+  background-color: #222222;
+  border-top: .1rem solid #fffa98;
+}
+
+
+        /*=== Media Queries===*/
+/* Devices under 1199px(xl) */
+@media(max-width:1199.98px){
+
+}
+/* Devices under 768px(md) */
+@media(max-width:768.98px){
+    
+}
+
+/* ==Bootstrap break points :
+Extra small(xs) devices(portrait phones,less than 576px)
+No medeia query since this is the default in bootstrap
+
+small(sm) devices(landscape phones, 576px and up)
+@media(min-width:576px){... }
+
+medium(md) devices(tablets, 768px and up)
+@media(min-width:768px){... }
+
+large(lg) devices(desktops, 992px and up)
+@media(min-width:992px){... }
+
+extra large(xl) devices(large desktops, 1200px and up)
+@media(min-width:1200px){... }
+
+=====*/
+
+/*==bootstrap mobile gutter fix===*/
+.row,.container-fluid{
+    margin-left: 0px !important;
+    margin-right: 0px !important;
+}
+/*====fixed background image====*/
+
+.fixed-background{
+position: relative;
+width: 100%;
+z-index: 1 !important;
+}
+
+.fixed-wrap{
+    clip: rect(0,auto,auto,0);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -999 !important;
+}
+
+.fixed{
+  /* z-index: -999 !important;*/
+    display: block;
+    top: 0;
+    left: 0;
+    width: 100%;
+    /*height: 100%;*/
+    background-size:cover;
+    background-position: center center;
+    -webkit-transform: translateZ(0);
+    transform: translateZ(0);
+    will-change: transform;
+
+}
+
+
+
+

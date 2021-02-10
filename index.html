@@ -64,44 +64,32 @@
             <li><a href="#"><img src="img/eva-1.png" height="150" class="img-fluid logo rounded-circle" alt="logo"
                         title="Home" /></a></li>
             <!--links-->
-            <li class="dropdown"><a href="#">About Us <i class="fas fa-chevron-circle-down"></i> </a>
-                <ul class="dropdown-content">
-                    <li>
+            <li><a href="#">About Us <i class="fas fa-chevron-circle-down"></i> </a>
+                <ul>
                     <li><a href="#">Who we are</a></li>
                     <li><a href="#">What We Do</a></li>
                     <li><a href="#">Our profession</a></li>
                 </ul>
             </li>
-            <li class="dropdown">
-                </button><a href="#">Journal-EVJ</a>
-            </li>
-            <li class="dropdown"><a href="#">Publications <i class="fas fa-chevron-circle-down"></i> </a>
-                <ul class="dropdown-content">
-                    <li>
-                    <li><a href="#">Reports</a></li>
+            <li class="dropdown"><a href="#">Journal-EVJ</a> </li>
+            <li><a href="#">Publications <i class="fas fa-chevron-circle-down"></i> </a>
+                <ul >
+                     <li><a href="#">Reports</a></li>
                     <li><a href="#">Procedings</a></li>
                     <li><a href="#">News letters</a></li>
                     <li><a href="#">Bulletins</a></li>
                 </ul>
             </li>
-            <li class="dropdown">
-                <a href="#">Training </a>
-            </li>
-            <li class="dropdown">
-                <a href="#">Membership </a>
-            </li>
-            <li class="dropdown"><a href="#">Projects <i class="fas fa-chevron-circle-down"></i> </a>
-                <ul class="dropdown-content">
-                    <li>
+            <li><a href="#">Training </a></li>
+            <li><a href="#">Membership </a></li>
+            <li><a href="#">Projects <i class="fas fa-chevron-circle-down"></i> </a>
+                <ul>
                     <li><a href="#">HEARD</a></li>
                     <li><a href="#">Project1</a></li>
                     <li><a href="#">project2</a></li>
                 </ul>
             </li>
-            <li class="dropdown">
-                <a href="#">EVA Conference </a>
-            </li>
-
+            <li><a href="#">EVA Conference </a></li>
         </ul>
     </nav>
     <!--End Main Navigation bar-->
@@ -212,8 +200,9 @@
         </div>
     </div>
     <!--End two column message selection-->
-
+        
     <!--Three column About us section below the president message-->
+    <div class="pd-parallax" data-parallax-image="img/catles.jpg">
     <div class="container">
         <div class="col-12 text-center mt-5">
             <h1 class="text-dark pt-4">About us</h1>
@@ -250,6 +239,7 @@
             </div>
         </div>
     </div>
+    
     <!--Latest News section-->
     <div class="col-12 text-center mt-5">
         <h1 class="text-dark pt-4">Latest News</h1>
@@ -331,6 +321,7 @@
                 </div>
             </div>
         </div>
+    </div>
         <!--Training heading-->
         <div class="container">
             <div class="row text-light py-5">
@@ -506,6 +497,11 @@
     <script src="js/all.min.js"></script>
     <!--custom JS-->
     <script src="js/sticky.js"></script>
+    <script>
+        Array.prototype.forEach.call(document.querySelectorAll('.pd-parallax'), function (elem) {
+          elem.style.backgroundImage = 'url(' + elem.getAttribute('data-parallax-image') + ')';
+        })
+      </script>
 </body>
 
 </html>

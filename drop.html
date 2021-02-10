@@ -1,33 +1,275 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="css/drop.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>parrallex</title>
+  <link rel="stylesheet" href="css/bootstrap.min.css" />
+  <link rel="stylesheet" href="css/drop.css" />
 </head>
+
 <body>
-    <div class="navbar">
-        <a href="#home">Home</a>
-        <li class="nav-item"><a class="nav-link" href="index.html">About Us</a></li>
-        <li class="nav-item"><a class="nav-link" href="#">Journal-EVJ</a></li>
-        <li class="nav-item"><a class="nav-link" href="#">Other Publications</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#">Trainig</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#">Membership</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#">Projects</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#">EVA Conference</a></li>
-                
-        <a href="#news">News</a>
-        <div class="dropdown">
-          <button class="dropbtn">Dropdown
-            <i class="fa fa-caret-down"></i>
-          </button>
-          <div class="dropdown-content">
-            <a href="#">Link 1</a>
-            <a href="#">Link 2</a>
-            <a href="#">Link 3</a>
+  <nav id="nav" role="navigation">
+    <div class="second text-justify-end">
+      <p> <a href="#"></a><a href="#">this is just a link</a></p>
+    </div>
+
+    <ul>
+      <!--logo-->
+      <li><a href="#"><img src="img/eva-1.png" height="150" class="img-fluid logo rounded-circle" alt="logo"
+            title="Home" /></a></li>
+      <!--links-->
+      <li class="dropdown">
+        <button class="dropbtn"><a href="#">About Us <i class="fas fa-chevron-circle-down"></i> </a></button>
+        <div class="dropdown-content">
+          <a href="#">Who we are</a>
+          <a href="#">What We Do</a>
+          <a href="#">Our profession</a>
+        </div>
+      </li>
+      <li class="dropdown">
+        <button class="dropbtn"><a href="#">journal-EVJ</a></button>
+      </li>
+      <li class="dropdown">
+        <button class="dropbtn"><a href="#">Publications <i class="fas fa-chevron-circle-down"></i> </a></button>
+        <div class="dropdown-content">
+          <a href="#">Reports</a>
+          <a href="#">Procedings</a>
+          <a href="#">News Letters</a>
+        </div>
+      </li>
+      <li class="dropdown">
+        <button class="dropbtn"><a href="#">Training</a></button>
+      </li>
+      <li class="dropdown">
+        <button class="dropbtn"><a href="#">Membership</a></button>
+      </li>
+      <li class="dropdown">
+        <button class="dropbtn"><a href="#">Projects <i class="fas fa-chevron-circle-down"></i> </a></button>
+        <div class="dropdown-content">
+          <a href="#">HEARD</a>
+          <a href="#">Project2</a>
+        </div>
+      </li>
+      <li class="dropdown">
+        <button class="dropbtn"><a href="#">EVA Conference</a></button>
+      </li>
+    </ul>
+
+  </nav>
+  <!--start two column selection==> president message section-->
+  <div class="container my-5">
+    <div class="row py-4 pmsg">
+      <div class="col-lg-8 mb-4 my-lg-auto order-md-2">
+        <h2 class="text-dark font-weight-bold mb-3">Message from the president</h2>
+        <div class="border-top border-primary w-50 mx-auto my-3"></div>
+        <p class="mb-4 lead"><i class="fa fa-quote-left fa-pull-left fa-border"></i> The Ethiopian Veterinary
+          Association (EVA) is a pioneer,
+          membership based professional association established in the year 1974 through the initiation of
+          thirteen visionary veterinarian; now it has more than 1500 members. The association has a national
+          mandate of promoting and strengthening the veterinary profession, respect professional ethics and
+          code of conduct and above all to safe guard the right of veterinarians. Moreover, the association
+          has been contributing to the emergence of efficient, effective and competitive livestock industry in
+          Ethiopia. It is dedicated to policy advocacy, development, promotion, and dissemination of knowledge
+          and good practices in the livestock sector and serving the interest of the society.
+          <br><br><em><i>Thank you for visiting the web site of EVA! </i> </em> &nbsp;<i class="fas fa-quote-right"></i>
+        </p>
+      </div>
+      <div class="col-lg-4"><img src="/img/president.jpeg" alt="EVA president image"
+          class="w-100 img-fluid mx-auto rounded-circle">
+        <p class="text-center">Dr.Edmealem Shitaye <br>
+        <div class="border-top border-primary w-50 mx-auto mb-3"></div>
+        <em class="position">president, Ethipian Veterinary Assocoiation</em></p>
+      </div>
+    </div>
+  </div>
+  <!--paralallex image effect-->
+  <div class="pd-parallax" data-parallax-image="img/lab3.jpg">
+    <div class="pd-title">
+      <h1>About Us</h1>
+    </div>
+  </div>
+  <!--Three column About us section below the president message-->
+  <div class="pd-parallax" data-parallax-image="img/lab3.jpg">
+    <div class="container">
+      <!--pt-3 pb-3-->
+      <div class="row pt-3 pb-5">
+        <div class="col-md-4">
+          <div class="card">
+            <img class=" rounded-circle" src="/img/wwd.png" alt="" height="200px" width="200px">
+            <div class="card-body">
+              <h3 class="card-title">Who We are</h3>
+              <p>Donec sed odio dui. Etiam porta sem malesuada magna mollis euismod. Nullam id dolor id nibh
+                ultricies vehicula ut id elit. Morbi leo risus, porta ac consectetur ac, vestibulum at eros.
+                Praesent commodo cursus magna.</p>
+              <p><a class="btn btn-secondary" href="#" role="button">View details &raquo;</a></p>
+            </div>
+          </div>
+        </div><!-- /.col-md-4 -->
+        <div class="col-md-4">
+          <div class="card">
+            <img class=" rounded-circle" src="img/whatWeDo.jpeg" alt="" height="200px" width="200px">
+            <div class="card-body">
+              <h3 class="card-title">What we Do</h3>
+              <p>Donec sed odio dui. Etiam porta sem malesuada magna mollis euismod. Nullam id dolor id nibh
+                ultricies vehicula ut id elit. Morbi leo risus, porta ac consectetur ac, vestibulum at eros.
+                Praesent commodo cursus magna.</p>
+              <p><a class="btn btn-secondary" href="#" role="button">View details &raquo;</a></p>
+            </div>
+          </div>
+        </div><!-- /.col-md-4 -->
+        <div class="col-md-4">
+          <div class="card">
+            <img class=" rounded-circle" src="img/vet.jpeg" alt="" height="200px" width="200px">
+            <div class="card-body">
+              <h3 class="card-title">Our profession</h3>
+              <p>Donec sed odio dui. Etiam porta sem malesuada magna mollis euismod. Nullam id dolor id nibh
+                ultricies vehicula ut id elit. Morbi leo risus, porta ac consectetur ac, vestibulum at eros.
+                Praesent commodo cursus magna.</p>
+              <p><a class="btn btn-secondary" href="#" role="button">View details &raquo;</a></p>
+            </div>
+          </div>
+        </div><!-- /.col-md-4 -->
+
+      </div>
+    </div>
+  </div>
+      <!---Latest News Section-->
+  <div class="container text-center  pt-3 pb-3">
+    <h1 class="text-dark pt-4">Latest News</h1>
+    <div class="border-top border-primary w-25 mx-auto my-3"></div>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus unde ab quisquam rem dolorum modi!
+    </p>
+
+  </div>
+  
+  <div class="pd-parallax" data-parallax-image="img/sunset.jpg">
+
+    <div class="container">
+      <div class="row pt-5 pb-5">
+        <div class="col-md-4">
+          <div class="card">
+            <img class="card-img-top" src="img/horse4.jpeg" alt="" height="250px">
+            <div class="card-body">
+              <h3 class="card-title ">How to train your horse</h3>
+              <p>horses needs to be treated with care when used for riding and get appropriate rest and plenty of food
+                to keep them healthy
+                this tips are very important for the well being of the horse
+              </p>
+              <a href="#" class="btn btn-outline-dark btn-md">Our story</a>
+            </div>
           </div>
         </div>
+        <div class="col-md-4">
+          <div class="card">
+            <img class="card-img-top" src="img/hen4.jpeg" alt="" height="250px">
+            <div class="card-body">
+              <h3 class="card-title ">chicken farm bussiness</h3>
+              <p>If you take care of your chickens properly they will pay you back in no time.this can
+                be done
+                If you take care of your chickens properly they will pay you back in no time.</p>
+              <a href="#" class="btn btn-outline-dark btn-md">Read More</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card">
+            <img class="card-img-top" src="img/vet.jpeg" alt="" height="250px">
+            <div class="card-body">
+              <h3 class="card-title ">The effect of Antimicrobial overdose</h3>
+              <p> The inapropriate use of Antimicrobial bial is so dangerous
+                this tips are very important for the well being of the horse.
+
+              </p>
+              <a href="#" class="btn btn-outline-dark btn-md">Read More</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-12 text-center mt-2"> <a href="#" class="btn btn-primary btn-lg ml-3">More News</a></div>
+      </div>
     </div>
+
+  </div>
+  <!--Journals Section-->
+  <div class="container text-center pt-3 pb-3">
+    <h1 class="text-dark pt-4">JOURNALS</h1>
+    <div class="border-top border-primary w-25 mx-auto my-3"></div>
+    <p>...Latest EVJ Journals from EVA</p>
+
+  </div>
+  <div class="pd-parallax" data-parallax-image="img/tise.jpg">
+    <div class="container">
+      <div class="row pt-4 pb-4">
+        <div class="col-md-4">
+          <div class="card">
+            <img class="card-img-top" src="img/EVJImage2020.jpg" alt="" height="350px">
+            <div class="card-body">
+              <h3 class="card-title">Product 1</h3>
+            </div>
+          </div>
+
+        </div>
+        <div class="col-md-4">
+          <div class="card">
+            <img class="card-img-top" src="img/EVJImage2020.jpg" alt="" height="350px">
+            <div class="card-body">
+              <h3 class="card-title">Product 1</h3>
+            </div>
+          </div>
+
+        </div>
+        <div class="col-md-4">
+          <div class="card">
+            <img class="card-img-top" src="/img/EVJImage2020.jpg" alt="" height="350px">
+            <div class="card-body">
+              <h3 class="card-title">Product 1</h3>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </div>
+  </div>
+  <div class="container pt-3 pb-3">
+    <h3>this can contain text and images</h3>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus unde ab quisquam quaerat
+      laborum laboriosam, aspernatur temporibus fugit eligendi magni saepe atque suscipit iusto
+      incidunt corrupti autem rem dolorum modi!</p>
+
+    <h3>this can contain text and images</h3>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus unde ab quisquam quaerat
+      laborum laboriosam, aspernatur temporibus fugit eligendi magni saepe atque suscipit iusto
+      incidunt corrupti autem rem dolorum modi!</p>
+
+  </div>
+  <div class="pd-parallax" data-parallax-image="img/kid.jpg">
+
+  </div>
+  <div class="container pt-3 pb-3">
+    <h3>this can contain text and images</h3>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus unde ab quisquam quaerat
+      laborum laboriosam, aspernatur temporibus fugit eligendi magni saepe atque suscipit iusto
+      incidunt corrupti autem rem dolorum modi!</p>
+
+    <h3>this can contain text and images</h3>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus unde ab quisquam quaerat
+      laborum laboriosam, aspernatur temporibus fugit eligendi magni saepe atque suscipit iusto
+      incidunt corrupti autem rem dolorum modi!</p>
+  </div>
+  <div class="pd-parallax" data-parallax-image="img/terzina.jpg">
+    <div class="pd-title">
+      <h1>Last Div</h1>
+    </div>
+  </div>
+
+  <script src="js/all.min.js"></script>
+  <script>
+    Array.prototype.forEach.call(document.querySelectorAll('.pd-parallax'), function (elem) {
+      elem.style.backgroundImage = 'url(' + elem.getAttribute('data-parallax-image') + ')';
+    })
+  </script>
 </body>
+
 </html>

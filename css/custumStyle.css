@@ -1,15 +1,17 @@
+@import url('https://fonts.googleapis,com/css?family=poppins:100,200,300,400,500,600,700,800,900');
 /*-- Body reset--*/
 body{
   overflow-x: hidden;
-  font-family: /*'Montserrat', sans-serif; */ poppins, Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  font-family: 'poppins', 'Montserrat',sans-serif;
   color: #616971;
   margin: 0;
   padding: 0;
+  height: 100vh;
   box-sizing: border-box;
 }  
 /*== Header==*/
   #header {
-    font-family: Montserrat;
+    width: 100%;
   /* background-color: #fffa98;   */
   }
 
@@ -46,16 +48,13 @@ body{
         clear: both;
     }
     /*===secondary menu =====*/
-        .secm{
-          margin: -20px 204px;
-        }
         .secondm{
-          float: right;  
-          margin: 0 506px;/* center alignment*/
+       
         }
         .secondm a{
           color: #69a0d6;
           text-decoration: none;
+          display: flex-end;
         }
         .secondm a:hover{
           color:#222222;
@@ -64,30 +63,34 @@ body{
 /*==== Main Navigation====*/
         #nav {
           background-color:  #fffa98 !important;   
-          top: 0;
+           top: 0;
           width: 100%;
               box-shadow: 0 .5rem .5rem rgba(0, 0, 0, 0.4);
               /*background-image: linear-gradient(to left,#fffa98, #ffffff);*/
         }
+        
         #nav ul {
-          margin: 0;
+          margin: 0 auto;
           padding: 0;
-          list-style: none;
+         
+          display:flex;
+          justify-content: flex-end;
+          
+        }
+        #nav ul li {
+          flex: 1;
           display: flex;
+          list-style: none;
+          justify-content: center;
+          align-items: center;
+          transition-duration: 0.5s;
+          border-right: 1px solid rgba(255, 255, 255, .2);
         }
         /*logo*/
         #nav ul li img {
           height: 150px;
           transition: height 0.4s;
         }
-        #nav li {
-          flex: 1;
-          display: flex;
-          justify-content: center;
-          align-items: center;
-          transition-duration: 0.5s;
-        }
-        #nav li
         #nav ul li a {
           color:#4981b3 !important;  
           text-decoration: none;
@@ -102,7 +105,9 @@ body{
           
         }
         /*===Dropdown effect===*/
-    
+         #nav .dropdown-content{
+            display: none;
+          }
         
         /*===Dropdown effect===*/
         /*Finally the CSS for when the navbar has the fixed class activated:*/
@@ -365,7 +370,7 @@ extra large(xl) devices(large desktops, 1200px and up)
 .fixed-background{
 position: relative;
 width: 100%;
-z-index: 1 !important;
+z-index: 1000 !important;
 }
 
 .fixed-wrap{
@@ -378,7 +383,7 @@ z-index: 1 !important;
     z-index: -999 !important;
 }
 
-.fixed{
+.fixedbg{
   /* z-index: -999 !important;*/
     display: block;
     top: 0;
